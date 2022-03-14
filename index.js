@@ -1,12 +1,12 @@
 const slider = document.querySelector("#myRange");
-const output = document.querySelector("#number");
+const outputNum = document.querySelector("#number");
 const button = document.querySelector("#button#button");
 const letters = document.querySelector("#letters");
 const input = letters.querySelector(".input");
 const output = document.querySelector("#output");
 
 slider.addEventListener("input", function () {
-  output.innerHTML = this.value;
+  outputNum.textContent = this.value;
 });
 
 button.addEventListener("click", () => {
